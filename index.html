@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center min-vh-100 font-family-poppins"
+    >
+      <div class="d-flex flex-column">
+        <h1>RAFLY PASSWORD GENERATOR</h1>
+        <div class="d-flex flex-column gap-2 pt-4 pb-2">
+          <label for="passwordLength" class="fw-bold text-uppercase"
+            >Panjang Password</label
+          >
+          <input
+            type="number"
+            class="form-control form-control-lg"
+            id="passwordLength"
+          />
+          <label for="password" class="fw-bold text-uppercase">Password</label>
+          <input
+            type=""
+            class="form-control form-control-lg"
+            id="password"
+            disabled
+          />
+          <button
+            class="btn btn-outline-warning fw-bold text-uppercase"
+            onclick="getPassword()"
+          >
+            GENERATE PASSWORD
+          </button>
+          <button
+            class="btn btn-outline-success fw-bold text-uppercase"
+            onclick="savePassword()"
+            id="saveButton"
+          >
+            SAVE PASSWORD
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
