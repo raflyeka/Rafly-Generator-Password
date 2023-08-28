@@ -21,6 +21,8 @@ function getPassword() {
   alert("password has been generated!");
 }
 
+// savePassword is succeed
+
 function savePassword() {
   document.title = password.value;
   saveButton.setAttribute(
